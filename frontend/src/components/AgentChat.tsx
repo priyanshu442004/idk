@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useConversation } from "@elevenlabs/react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://idk-0ea4.onrender.com");
 
 type Message = {
   text: string;
@@ -213,3 +213,4 @@ const MultiAgentChat: React.FC = () => {
 };
 
 export default MultiAgentChat;
+
